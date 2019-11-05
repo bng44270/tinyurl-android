@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>TinyURL client</title>
+</head>
+<body>
+<form method="POST" action="/gettinyurl/">
+Long URL: <input type="text" name="longurl" /><input type="submit" value="Shorten"/><br/><br/>
+</form>
+{% if tinyurl %}
+Long URL: {{ longurl }}<br/>
+Tiny URL: {{ tinyurl }}<br/>
+{% endif %}
+</body>
+</html>
